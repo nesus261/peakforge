@@ -24,6 +24,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    --tw-scroll-speed: 5s;
 }
 
 @layer utilities {
