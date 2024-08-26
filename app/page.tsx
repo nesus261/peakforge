@@ -59,7 +59,7 @@ export default function Home() {
           <h1 className="text-center text-5xl text-4xl font-bold">
             Dlaczego My?
           </h1>
-          <div className="m-5 mt-11">
+          <div className="m-5 mt-14">
             <div className="flex flex-row flex-wrap justify-center">
               <div className="basis-80 bg-sky-900 rounded-2xl p-6 m-5 mx-7 transform transition-transform duration-500 hover:scale-125 hover:-translate-x-12 hover:-translate-y-7">
                 <h1 className="text-3xl font-bold">Profesjonalizm</h1>
@@ -93,18 +93,18 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="snap-start min-h-screen">
-        <div className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-gradient-to-b from-gray-900 via-zinc-600/20 to-gray-900 p-6">
+      <div className="snap-start min-h-screen flex flex-col md:flex-row items-center justify-center min-h-screen bg-gradient-to-b from-gray-900 via-zinc-600/20 to-gray-900 p-6 ">
+        <div className="flex flex-col md:flex-row items-center justify-center min-h-screen p-6 max-w-7xl">
           <div className="relative w-full md:w-1/2 flex justify-center p-4">
-            <div className="absolute bottom-0 -mb-8 ml-16 w-11/12 h-4/5 bg-sky-800 rounded-lg shadow-lg"></div>
+            <div className="absolute bottom-0 -mb-8 ml-20 w-11/12 h-4/5 bg-sky-800 rounded-2xl shadow-lg"></div>
 
             <img
               src="11.png"
               alt="Obrazek"
-              className="w-11/12 max-w-full rounded-xl shadow-lg relative z-10 transform transition-transform duration-500 hover:scale-105 hover:-translate-y-2"
+              className="w-11/12 max-w-full rounded-2xl shadow-lg relative z-10 transform transition-transform duration-500 hover:scale-105 hover:-translate-y-2"
             />
           </div>
-          <div className="mx-8 my-14 w-full md:w-5/12 bg-blue-900 text-white p-6 rounded-xl shadow-lg transform transition-transform duration-500 hover:scale-105 hover:translate-x-2 hover:-translate-y-2">
+          <div className="mx-8 my-14 w-full md:w-5/12 bg-blue-900 text-white p-6 rounded-2xl shadow-lg transform transition-transform duration-500 hover:scale-105 hover:translate-x-2 hover:-translate-y-2">
             <h1 className="text-2xl md:text-3xl font-bold mb-4">
               Strony internetowe
             </h1>
@@ -113,7 +113,7 @@ export default function Home() {
               wyglądają atrakcyjnie, ale także są funkcjonalne i responsywne.
               Specjalizujemy się w:
             </p>
-            <ul className="list-disc list-inside">
+            <ul className="">
               <li>
                 <strong>WordPress:</strong> Idealny wybór dla prostych, jak i
                 zaawansowanych stron, które możesz łatwo zarządzać samodzielnie.
@@ -134,6 +134,25 @@ export default function Home() {
                 (SSR) oraz generowanie statycznych stron (SSG).
               </li>
             </ul>
+          </div>
+        </div>
+      </div>
+      <div className="snap-start min-h-screen antialiased flex flex-col items-center justify-center py-8 bg-gradient-to-b from-neutral-900 via-zinc-800/20 to-neutral-900">
+        <div className="max-w-5xl flex flex-col items-center justify-center">
+          <h1 className="text-center text-5xl text-4xl font-bold">
+            Skrypty na zlecenie
+          </h1>
+          <h5 className="mb-2 mt-10 text-2xl text-center max-w-3xl mx-8 leading-9">
+            Potrzebujesz skryptów, które zautomatyzują Twoje procesy biznesowe?
+            Tworzymy skrypty dostosowane do Twoich potrzeb, które zwiększą
+            efektywność Twojej firmy.
+          </h5>
+          <div className="flex justify-center video-wrapper mt-5 mb-4 transform transition-transform duration-500 hover:scale-105">
+            <video className="mov-1" autoPlay muted playsInline loop>
+              <source src="mov1.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <div className="overlay"></div>
           </div>
         </div>
       </div>
