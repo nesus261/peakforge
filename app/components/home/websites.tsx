@@ -13,7 +13,7 @@ export default function Websites() {
             className="w-11/12 max-w-full rounded-2xl shadow-lg relative z-10 transform transition-transform duration-500 hover:scale-105 hover:-translate-y-2"
           />
         </div>
-        <div className="mx-8 my-14 w-full md:w-5/12 bg-blue-900 text-white p-6 rounded-2xl shadow-lg transform transition-transform duration-500 hover:scale-105 hover:translate-x-2 hover:-translate-y-2">
+        <div className="mx-8 my-16 mb-96 md:mb-14 w-full md:w-5/12 bg-blue-900 text-white p-6 rounded-2xl shadow-lg transform transition-transform duration-500 hover:scale-105 hover:translate-x-2 hover:-translate-y-2">
           <h1 className="text-2xl md:text-3xl font-bold mb-4">
             Strony internetowe
           </h1>
