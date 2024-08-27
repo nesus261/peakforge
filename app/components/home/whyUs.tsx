@@ -2,7 +2,7 @@ import React from "react";
 
 export default function WhyUs() {
   return (
-    <div className="snap-start min-h-screen antialiased flex flex-col items-center justify-center py-8 bg-gradient-to-b from-[#181820] via-zinc-900/80 via-80% to-gray-900">
+    <div className="snap-start min-h-screen antialiased flex flex-col items-center justify-center py-8 bg-gradient-to-b from-indigo-950 via-zinc-900/80 via-80% to-gray-900">
       <div className="max-w-6xl">
         <h1 className="text-center text-5xl text-4xl font-bold">
           Dlaczego My?

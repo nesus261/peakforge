@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Websites() {
   return (
-    <div className="snap-start min-h-screen flex flex-col md:flex-row items-center justify-center min-h-screen bg-gradient-to-b from-gray-900 via-gray-900/40 to-neutral-900 p-6 ">
+    <div className="snap-start min-h-screen flex flex-col md:flex-row items-center justify-center min-h-screen bg-gradient-to-b from-gray-900 via-gray-900/40 to-fuchsia-950 p-6 ">
       <div className="flex flex-col md:flex-row items-center justify-center min-h-screen p-6 max-w-7xl">
         <div className="relative w-full md:w-1/2 flex justify-center p-4">
           <div className="absolute bottom-0 -mb-8 ml-20 w-11/12 h-4/5 bg-sky-800 rounded-2xl shadow-lg"></div>

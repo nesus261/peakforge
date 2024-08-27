@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Scripts() {
   return (
-    <div className="snap-start min-h-screen antialiased flex flex-col items-center justify-center py-8 bg-gradient-to-b from-neutral-900 via-zinc-800/20 to-neutral-900">
+    <div className="snap-start min-h-screen antialiased flex flex-col items-center justify-center py-8 bg-gradient-to-b from-fuchsia-950 via-zinc-800/50 via-90% to-neutral-900">
       <div className="max-w-5xl flex flex-col items-center justify-center">
         <h1 className="text-center text-5xl text-4xl font-bold">
           Skrypty na zlecenie
