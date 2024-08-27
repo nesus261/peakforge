@@ -41,6 +41,7 @@ const config: Config = {
 				title: "title 3s ease-out forwards",
 				"fade-left": "fade-left 3s ease-in-out forwards",
 				"fade-right": "fade-right 3s ease-in-out forwards",
+				"fade-in-fast": "fade-in 1s ease-in-out forwards",
 			},
 			keyframes: {
 				"fade-in": {
@@ -49,6 +50,17 @@ const config: Config = {
 					},
 					"75%": {
 						opacity: "0%",
+					},
+					"100%": {
+						opacity: "100%",
+					},
+				},
+				"fade-in-fast": {
+					"0%": {
+						opacity: "0%",
+					},
+					"50%": {
+						opacity: "50%",
 					},
 					"100%": {
 						opacity: "100%",
