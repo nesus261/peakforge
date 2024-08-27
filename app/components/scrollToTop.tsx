@@ -35,12 +35,12 @@ export default function ScrollToTop() {
     <>
       <motion.button
         onClick={scrollToTop}
-        className="fixed bottom-4 right-8 bg-cyan-800 text-white p-3 rounded-full shadow-lg hover:bg-cyan-700"
+        className="fixed bottom-4 right-8 bg-cyan-800 text-white p-3 rounded-full shadow-lg hover:bg-cyan-700 transform transition-transform duration-500 hover:scale-110"
         initial={{ opacity: 0 }}
         animate={{ opacity: isVisible ? 1 : 0 }}
         transition={{ duration: 0.3 }}
       >
-        <FiArrowUp size={24} />
+        <FiArrowUp size={28} />
       </motion.button>
     </>
   );
