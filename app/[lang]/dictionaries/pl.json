@@ -1,0 +1,82 @@
+{
+    "lang": "pl",
+    "metadata": {
+        "description": "Miejsce, w którym powstaną nowoczesne rozwiązania dla Twojego biznesu",
+        "openGraph": {
+            "description": "Miejsce, w którym powstaną nowoczesne rozwiązania dla Twojego biznesu",
+            "locale": "pl-PL"
+        }
+    },
+    "home": {
+        "welcome": {
+            "subtitle": "Miejsce, w którym powstaną nowoczesne rozwiązania dla Twojego biznesu"
+        },
+        "navBar": {
+            "home": { "name": "Strona główna", "href": "/" },
+            "about": { "name": "O nas", "href": "/about" },
+            "contact": { "name": "Kontakt", "href": "/contact" }
+        },
+        "us": {
+            "text": "Jesteśmy dynamiczną firmą software’ową specjalizującą się w tworzeniu nowoczesnych rozwiązań dla Twojego biznesu. Nasz zespół młodych i ambitnych specjalistów to pasjonaci technologii, którzy chętnie realizują projekty na najwyższym poziomie."
+        },
+        "whyUs": {
+            "whyUs": "Dlaczego My?",
+            "professionalism": "Profesjonalizm",
+            "professionalismDesc": "Każdy projekt realizujemy z dbałością o najmniejsze szczegóły.",
+            "innovation": "Innowacyjność",
+            "innovationDesc": "Zawsze jesteśmy na bieżąco z najnowszymi trendami i technologiami.", 
+            "flexibility": "Elastyczność", 
+            "flexibilityDesc": "Dostosowujemy nasze rozwiązania do indywidualnych potrzeb klientów.", 
+            "passion": "Pasja",
+            "passionDesc": "Kochamy to, co robimy, i widać to w naszych realizacjach."
+        },
+        "websites": {
+            "altImg": "Różne strony internetowe",
+            "websites": "Strony internetowe",
+            "descTitle": "Projektujemy i wdrażamy strony internetowe, które nie tylko wyglądają atrakcyjnie, ale także są funkcjonalne i responsywne. Specjalizujemy się w:",
+            "wordpress": "Idealny wybór dla prostych, jak i zaawansowanych stron, które możesz łatwo zarządzać samodzielnie.",
+            "react": "Tworzymy dynamiczne i interaktywne aplikacje webowe, które zapewniają wyjątkowe doświadczenie użytkownika.",
+            "django": "Złożone, skalowalne aplikacje webowe, które rosną razem z Twoim biznesem.",
+            "nextjs": "Nowoczesne aplikacje internetowe, które łączą szybkość i wydajność z bezproblemową obsługą SEO."
+        }, 
+        "scripts": {
+            "title": "Skrypty na zlecenie", 
+            "description": "Potrzebujesz skryptów, które zautomatyzują Twoje procesy biznesowe? Tworzymy skrypty dostosowane do Twoich potrzeb, które zwiększą efektywność Twojej firmy.",
+            "videoNotSupported": "Twoja przeglądarka nie wspiera tagu video."
+        }, 
+        "mobileApps": {
+            "title": "Aplikacje Mobilne",
+            "description": "Tworzymy aplikacje mobilne w oparciu o istniejące strony internetowe, co pozwala na szybkie wdrożenie i integrację z już funkcjonującymi systemami. Nasze aplikacje działają płynnie na różnych urządzeniach mobilnych, zapewniając użytkownikom najwyższą jakość."
+        }
+    }, 
+    "about": {
+        "title": "O nas",
+        "description": "to grupa młodych, ambitnych ludzi, którzy z pasją podchodzą do każdego projektu. Naszą misją jest dostarczanie innowacyjnych i efektywnych rozwiązań, które wspierają rozwój naszych klientów. Stale poszerzamy naszą wiedzę i umiejętności, aby oferować usługi na najwyższym poziomie."
+    },
+    "contact": {
+        "title": "Kontakt",
+        "description1": "Masz pomysł na projekt? Chcesz usprawnić swoje procesy biznesowe? Skontaktuj się z nami, a razem stworzymy coś wyjątkowego!",
+        "description2": "Wyślij wiadomość na nasz email lub wypełnij formularz kontaktowy", 
+        "description3": "Email: kontakt@nazwafirmy.pl",
+        "subject": "Temat",
+        "subjectPlaceholder": "Temat",
+        "message": "Wiadomość", 
+        "messagePlaceholder": "Twoja wiadomość",
+        "verifyCaptcha": "Zweryfikuj Captcha", 
+        "completeCaptcha": "Uzupełnij CAPTCHA.",
+        "send": "Wyślij",
+        "actions": {
+            "enterEmail": "Wprowadź poprawny adres email.",
+            "enterSubject": "Wprowadź temat.",
+            "messageCannotBeEmpty": "Wiadomość nie może być pusta.", 
+            "completeCaptcha": "Uzupełnij CAPTCHA.",
+            "missingFields": "Brakujące pola. Nie udało się wysłać wiadomości.",
+            "formConfirmation": "Potwierdzenie wypełnienia formularza",
+            "confirmationMessage1": "Dziękujemy za wypełnienie formularza na stronie peakforge.pl!\n\nTemat:",
+            "confirmationMessage2": "Twoja wiadomość:",
+            "sentMessage": "Wiadomość wysłana pomyślnie!",
+            "recaptchaFailed": "Weryfikacja reCAPTCHA zakończona niepowodzeniem.",
+            "serverErrorFailedSend": "Błąd serwera: Nie udało się wysłać wiadomości."
+        }
+    }
+}

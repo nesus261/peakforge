@@ -1,0 +1,82 @@
+{
+    "lang": "pl",
+    "metadata": {
+        "description": "A place where modern solutions for your business will be created",
+        "openGraph": {
+            "description": "A place where modern solutions for your business will be created",
+            "locale": "pl-PL"
+        }
+    },
+    "home": {
+        "welcome": {
+            "subtitle": "A place where modern solutions for your business will be created"
+        },
+        "navBar": {
+            "home": { "name": "Home", "href": "/" },
+            "about": { "name": "About us", "href": "/about" },
+            "contact": { "name": "Contact", "href": "/contact" }
+        },
+        "us": {
+            "text": "We are a dynamic software company specializing in creating modern solutions for your business. Our team of young and ambitious specialists are technology enthusiasts who are eager to implement projects at the highest level."
+        },
+        "whyUs": {
+            "whyUs": "Why us?",
+            "professionalism": "Professionalism",
+            "professionalismDesc": "We implement each project with attention to the smallest details.",
+            "innovation": "Innovation",
+            "innovationDesc": "We are always up to date with the latest trends and technologies.", 
+            "flexibility": "Flexibility", 
+            "flexibilityDesc": "We adapt our solutions to individual customer needs.", 
+            "passion": "Passion",
+            "passionDesc": "We love what we do, and it shows in our projects."
+        },
+        "websites": {
+            "altImg": "Various websites",
+            "websites": "Websites",
+            "descTitle": "We design and implement websites that not only look attractive, but are also functional and responsive. We specialize in:",
+            "wordpress": "The perfect choice for simple and advanced websites that you can easily manage yourself.",
+            "react": "We create dynamic and interactive web applications that provide exceptional user experience.",
+            "django": "Complex, scalable web applications that grow with your business.",
+            "nextjs": "Modern web apps that combine speed and performance with seamless SEO support."
+        }, 
+        "scripts": {
+            "title": "Custom scripts", 
+            "description": "Need scripts to automate your business processes? We create scripts customized to your needs that will increase the efficiency of your company.",
+            "videoNotSupported": "Your browser does not support the video tag."
+        }, 
+        "mobileApps": {
+            "title": "Mobile Applications",
+            "description": "We create mobile applications based on existing websites, which allows for quick implementation and integration with existing systems. Our applications run smoothly on various mobile devices, providing users with the best experience."
+        }
+    }, 
+    "about": {
+        "title": "About us",
+        "description": "is a group of young, ambitious people who approach every project with passion. Our mission is to provide innovative and effective solutions that support the development of our clients. We are constantly expanding our knowledge and skills to offer services at the highest level."
+    },
+    "contact": {
+        "title": "Contact",
+        "description1": "Do you have an idea for a project? Do you want to improve your business processes? Contact us and we will create something exceptional together!",
+        "description2": "Send a message to our email or fill out the contact form", 
+        "description3": "Email: kontakt@nazwafirmy.pl",
+        "subject": "Subject",
+        "subjectPlaceholder": "Subject",
+        "message": "Message", 
+        "messagePlaceholder": "Your message",
+        "verifyCaptcha": "Verify Captcha", 
+        "completeCaptcha": "Complete CAPTCHA.",
+        "send": "Send",
+        "actions": {
+            "enterEmail": "Enter a valid email address.",
+            "enterSubject": "Enter a subject.",
+            "messageCannotBeEmpty": "Message cannot be empty.", 
+            "completeCaptcha": "Complete CAPTCHA.",
+            "missingFields": "Missing fields. Message could not be sent.",
+            "formConfirmation": "Confirmation of form submission",
+            "confirmationMessage1": "Thank you for filling out the form on peakforge.pl!\n\nSubject:",
+            "confirmationMessage2": "Your message:",
+            "sentMessage": "Message sent successfully!",
+            "recaptchaFailed": "reCAPTCHA verification failed.",
+            "serverErrorFailedSend": "Server error: Failed to send message."
+        }
+    }
+}

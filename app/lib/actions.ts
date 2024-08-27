@@ -5,6 +5,8 @@ import { revalidatePath } from 'next/cache';
 import { redirect } from 'next/navigation';
 const nodemailer = require('nodemailer');
 
+import { getDictionary } from "../[lang]/dictionaries";
+
 
 const secretKey = '6LfXGv8pAAAAAKcaLOTimAc9V5dfEfYqqkVKxrFQ';
 
@@ -14,19 +16,6 @@ const transporter = nodemailer.createTransport({
     user: process.env.NEXT_PUBLIC_EMAIL_USERNAME,
     pass: process.env.NEXT_PUBLIC_EMAIL_PASSWORD
   }
-});
-
-const Contact = z.object({
-  email: z.string().trim().email({ message: 'Wprowadź poprawny adres email.' }),
-  subject: z.string({
-    invalid_type_error: 'Wprowadź temat.',
-  }).trim().min(1, { message: 'Wprowadź temat.' }),
-  message: z.string({
-    invalid_type_error: 'Pole wiadomości nie może być puste.',
-  }).trim().min(1, { message: 'Wiadomość nie może być pusta.' }),
-  captchaToken: z.string({
-    invalid_type_error: 'reCAPTCHA token is required.',
-  }).trim().min(1, { message: 'Wykonaj captche.' }),
 });
 
 export type State = {
@@ -40,7 +29,21 @@ export type State = {
     success?: boolean;
 };
 
-export async function sendMessage(prevState: State, formData: FormData) {
+export async function sendMessage(lang: string, prevState: State, formData: FormData) {
+    const dict = (await getDictionary(lang)).contact.actions;
+
+    const Contact =  z.object({
+        email: z.string().trim().email({ message: dict.enterEmail }),
+        subject: z.string({
+            invalid_type_error: dict.enterSubject,
+        }).trim().min(1, { message: dict.enterSubject }),
+        message: z.string({
+            invalid_type_error: dict.messageCannotBeEmpty,
+        }).trim().min(1, { message: dict.messageCannotBeEmpty }),
+        captchaToken: z.string({
+            invalid_type_error: dict.completeCaptcha,
+        }).trim().min(1, { message: dict.completeCaptcha }),
+    });
     const user_env = process.env.NEXT_PUBLIC_EMAIL_USERNAME;
     const email_env = process.env.NEXT_PUBLIC_PERSONAL_EMAIL;
     const rawFormData = Object.fromEntries(formData.entries());
@@ -49,7 +52,7 @@ export async function sendMessage(prevState: State, formData: FormData) {
     if (!validatedFields.success) {
       return {
         errors: validatedFields.error.flatten().fieldErrors,
-        message: 'Brakujące pola. Nie udało się wysłać wiadomości.',
+        message: dict.missingFields,
         success: false
       };
     }
@@ -82,8 +85,8 @@ export async function sendMessage(prevState: State, formData: FormData) {
             var mailOptions2 = {
                 from: user_env,
                 to: email,
-                subject: 'Potwierdzenie wypełnienia formularza',
-                text: `Dziękujemy za wypełnienie formularza na stronie peakforge.pl!\n\nTemat: ${subject}\nTwoja wiadomość: ${message}`
+                subject: dict.formConfirmation,
+                text: `${dict.confirmationMessage1} ${subject}\n${dict.confirmationMessage2} ${message}`
             };
             
             transporter.sendMail(mailOptions2, function(error: any, info: any){
@@ -93,14 +96,14 @@ export async function sendMessage(prevState: State, formData: FormData) {
                     console.log('Email sent: ' + info.response);
                 }
             });
-            return { success: true, message: 'Wiadomość wysłana pomyślnie' };
+            return { success: true, message: dict.sentMessage };
         } else {
-            return { success: false, message: 'reCAPTCHA verification failed' };
+            return { success: false, message: dict.recaptchaFailed };
         }
     } catch (error) {
         return {
             success: false,
-            message: 'Server Error: Failed to Send Message.',
+            message: dict.serverError,
         };
     }
   
