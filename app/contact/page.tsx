@@ -11,7 +11,10 @@ export default function About() {
       <div className="min-h-screen scroll-smooth snap-y snap-mandatory">
         <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-slate-950 via-slate-900/40 pt-10 pb-10">
           <NavBar
-            navigation={[{ name: "Home", href: "/" }]}
+            navigation={[
+              { name: "Home", href: "/" },
+              { name: "About us", href: "/about" },
+            ]}
             fastLoad={true}
           ></NavBar>
           <h1 className="text-center text-5xl text-4xl font-bold animate-fade-in-fast">

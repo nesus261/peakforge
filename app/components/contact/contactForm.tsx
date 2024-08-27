@@ -37,7 +37,7 @@ export default function ContactForm() {
                 name="email"
                 type="text"
                 placeholder="Email"
-                className="bg-zinc-900 peer block w-full rounded-md border border-gray-200 py-2 pl-4 text-sm outline-2 placeholder:text-gray-500"
+                className="bg-zinc-900 peer block w-full rounded-md border border-gray-200 py-2 pl-4 text-sm outline-2 placeholder:text-gray-500 transform transition-transform duration-500 hover:scale-[1.01] focus:scale-[1.01]"
                 aria-describedby="email-error"
               />
             </div>
@@ -62,7 +62,7 @@ export default function ContactForm() {
                 name="subject"
                 type="text"
                 placeholder="Temat"
-                className="bg-zinc-900 peer block w-full rounded-md border border-gray-200 py-2 pl-4 text-sm outline-2 placeholder:text-gray-500"
+                className="bg-zinc-900 peer block w-full rounded-md border border-gray-200 py-2 pl-4 text-sm outline-2 placeholder:text-gray-500 transform transition-transform duration-500 hover:scale-[1.01] focus:scale-[1.01]"
                 aria-describedby="subject-error"
               />
             </div>
@@ -87,7 +87,7 @@ export default function ContactForm() {
                 name="message"
                 rows={3}
                 placeholder="Twoja wiadomość"
-                className="bg-zinc-900 peer block w-full rounded-md border border-gray-200 py-2 pl-4 text-sm outline-2 placeholder:text-gray-500"
+                className="bg-zinc-900 peer block w-full rounded-md border border-gray-200 py-2 pl-4 text-sm outline-2 placeholder:text-gray-500 transform transition-transform duration-500 hover:scale-[1.01] focus:scale-[1.01]"
                 aria-describedby="message-error"
               />
             </div>
@@ -106,7 +106,7 @@ export default function ContactForm() {
             <div className="relative">
               <button
                 type="button"
-                className="peer block w-full rounded-md border border-gray-200 py-2 pl-4 text-sm outline-2 placeholder:text-gray-500"
+                className="peer block w-full rounded-md border border-gray-200 py-2 pl-4 text-sm outline-2 placeholder:text-gray-500 transform transition-transform duration-500 hover:scale-[1.01] hover:bg-blue-950"
                 onClick={handleReCaptchaVerify}
               >
                 Zweryfikuj Captcha
@@ -124,7 +124,7 @@ export default function ContactForm() {
           </div>
           {!captchaToken && (
             <div
-              className="mb-4 text-red-400 text-base"
+              className="mt-2 mb-4 text-red-400 text-base"
               style={{ display: "block" }}
             >
               Uzupełnij CAPTCHA.
@@ -152,7 +152,7 @@ export default function ContactForm() {
           </p>
         </div>
 
-        <button className="flex h-10 items-center rounded-lg bg-blue-600 px-4 text-sm font-medium text-white transition-colors hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500 active:bg-blue-600 aria-disabled:cursor-not-allowed aria-disabled:opacity-50">
+        <button className="flex h-10 items-center rounded-lg bg-blue-600 px-4 text-sm font-medium text-white transition-colors hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500 active:bg-blue-600 aria-disabled:cursor-not-allowed aria-disabled:opacity-50 transform transition-transform duration-500 hover:scale-105">
           Wyślij
         </button>
       </form>
