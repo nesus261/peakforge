@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: "Chronark",
+    title: "PeakForge",
     card: "summary_large_image",
   },
   icons: {

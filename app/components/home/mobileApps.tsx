@@ -3,7 +3,7 @@ import React from "react";
 export default function MobileApps() {
   return (
     <div className="snap-start min-h-screen antialiased flex flex-col items-center justify-center py-8 bg-gradient-to-b from-neutral-900 via-blue-900/50 to-blue-950">
-      <div className="max-w-5xl flex flex-col items-center justify-center">
+      <div className="mb-96 md:mb-20 max-w-5xl flex flex-col items-center justify-center">
         <h1 className="text-center text-5xl text-4xl font-bold">
           Aplikacje Mobilne
         </h1>
