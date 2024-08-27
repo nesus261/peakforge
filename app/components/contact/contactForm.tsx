@@ -132,12 +132,24 @@ export default function ContactForm() {
           )}
           <div id="captchaToken-error" aria-live="polite" aria-atomic="true">
             {state.errors?.captchaToken &&
+              !captchaToken &&
               state.errors.captchaToken.map((error: string) => (
                 <p className="mt-2 text-sm text-red-500" key={error}>
                   {error}
                 </p>
               ))}
           </div>
+        </div>
+        <div id="empty-error" aria-live="polite" aria-atomic="true">
+          <p
+            className={
+              "mt-2 mb-4 text-base " +
+              (state.success == true ? "text-green-500" : "text-red-500")
+            }
+            key={state.message}
+          >
+            {state.message}
+          </p>
         </div>
 
         <button className="flex h-10 items-center rounded-lg bg-blue-600 px-4 text-sm font-medium text-white transition-colors hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500 active:bg-blue-600 aria-disabled:cursor-not-allowed aria-disabled:opacity-50">

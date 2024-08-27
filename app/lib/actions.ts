@@ -37,6 +37,7 @@ export type State = {
       captchaToken?: string[];
     };
     message?: string | null;
+    success?: boolean;
 };
 
 export async function sendMessage(prevState: State, formData: FormData) {
@@ -49,6 +50,7 @@ export async function sendMessage(prevState: State, formData: FormData) {
       return {
         errors: validatedFields.error.flatten().fieldErrors,
         message: 'Brakujące pola. Nie udało się wysłać wiadomości.',
+        success: false
       };
     }
     
