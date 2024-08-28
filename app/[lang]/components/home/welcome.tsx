@@ -5,6 +5,7 @@ import { getDictionary } from "../../dictionaries";
 
 export default function Welcome(params: any) {
   const dict = params.dict;
+
   return (
     <div className="snap-start flex flex-col items-center justify-center h-screen bg-gradient-to-b from-slate-950 via-slate-900/40 overflow-hidden">
       <NavBar dict={dict} />
