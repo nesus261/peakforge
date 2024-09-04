@@ -11,7 +11,7 @@ export default function NavBar(params: Props) {
   const dict = params.dict;
   let navigation = params.navigation || ["about", "contact"];
   const fastLoad = params.fastLoad || false;
-  navigation = navigation.map((item) => dict.home.navBar[item]);
+  navigation = navigation.map((item: any) => dict.home.navBar[item]);
   return (
     <nav
       className={
@@ -19,7 +19,7 @@ export default function NavBar(params: Props) {
       }
     >
       <ul className="flex items-center justify-center gap-4">
-        {navigation.map((item) => (
+        {navigation.map((item: any) => (
           <Link
             key={item.href}
             href={`/${dict.lang}/${item.href}`}

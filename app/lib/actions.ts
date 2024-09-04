@@ -25,7 +25,7 @@ export type State = {
       message?: string[];
       captchaToken?: string[];
     };
-    message?: string | null;
+    message?: string | null | any;
     success?: boolean;
 };
 

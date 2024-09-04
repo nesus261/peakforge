@@ -4,7 +4,7 @@ const locales = ['en', 'pl'];
 
 function getLocale(request: any) { 
     const headerLangs = request.headers.get('accept-language');
-    let best = locales.reduce((best, locale) => {
+    let best = locales.reduce((best: any, locale) => {
         if (headerLangs.includes(locale)) {
             if (best == null || headerLangs.indexOf(locale) < headerLangs.indexOf(best)) {
                 return locale;

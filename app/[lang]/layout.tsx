@@ -6,10 +6,14 @@ import { getDictionary } from "./dictionaries";
 
 export type Props = {
   params: { lang: string };
-  searchParams?: { [key: string]: string | string[] | undefined };
+  searchParams: { [key: string]: string | string[] | undefined };
 };
 export async function generateMetadata(
-  { params }: Props,
+  {
+    params,
+  }: {
+    params: { lang: string };
+  },
   parent: ResolvingMetadata
 ): Promise<Metadata> {
   const dict = await getDictionary(params.lang);
