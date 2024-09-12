@@ -29,13 +29,14 @@ export function middleware(request: any) {
   request.nextUrl.pathname = `/${locale}${pathname}`
   // e.g. incoming request is /products
   // The new URL is now /en-US/products
-  if (!['.png', '.ico', '.mp4', '.svg'].includes(pathname.slice(-4))) return NextResponse.redirect(request.nextUrl)
+  //if (!['.png', '.ico', '.mp4', '.svg'].includes(pathname.slice(-4))) 
+  return NextResponse.redirect(request.nextUrl)
 }
  
 export const config = {
   matcher: [
     // Skip all internal paths (_next)
-    '/((?!_next).*)',
+    '/((?!_next/static|_next/image|favicon.ico|sitemap.xml|robots.txt|.*\\.(?:png|ico|mp4|svg)).*)',
     // Optional: only run on root (/) URL
     // '/'
   ],
