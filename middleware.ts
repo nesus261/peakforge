@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 const locales = ['en', 'pl'];
 
 function getLocale(request: any) { 
-    const headerLangs = request.headers.get('accept-language');
+    const headerLangs = request.headers.get('accept-language') || ['en'];
     let best = locales.reduce((best: any, locale) => {
         if (headerLangs.includes(locale)) {
             if (best == null || headerLangs.indexOf(locale) < headerLangs.indexOf(best)) {
