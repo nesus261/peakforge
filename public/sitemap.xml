@@ -1,0 +1,41 @@
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://peakforge.pl</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://peakforge.pl/en"/>
+    <xhtml:link
+      rel="alternate"
+      hreflang="pl"
+      href="https://peakforge.pl/pl"/>
+    <lastmod>2024-09-12T11:02:24.021Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peakforge.pl/about</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://peakforge.pl/en/about"/>
+    <xhtml:link
+      rel="alternate"
+      hreflang="pl"
+      href="https://peakforge.pl/pl/about"/>
+    <lastmod>2024-09-12T11:02:24.021Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peakforge.pl/contact</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://peakforge.pl/en/contact"/>
+    <xhtml:link
+      rel="alternate"
+      hreflang="pl"
+      href="https://peakforge.pl/pl/contact"/>
+    <lastmod>2024-09-12T11:02:24.021Z</lastmod>
+  </url>
+</urlset>

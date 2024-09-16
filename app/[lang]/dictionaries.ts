@@ -5,4 +5,4 @@ const dictionaries: any = {
   pl: () => import('./dictionaries/pl.json').then((module) => module.default),
 }
  
-export const getDictionary = async (locale: any) => dictionaries[locale]()
+export const getDictionary = async (locale: any) => locale == 'sitemap.xml' ?  dictionaries.en() : dictionaries[locale]()
