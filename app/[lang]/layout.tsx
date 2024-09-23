@@ -19,6 +19,10 @@ export async function generateMetadata(
   const dict = await getDictionary(params.lang);
 
   return {
+    metadataBase: new URL(`https://peakforge.pl`),
+    alternates: {
+      canonical: "./",
+    },
     title: {
       default: "PeakForge",
       template: "%s | PeakForge",

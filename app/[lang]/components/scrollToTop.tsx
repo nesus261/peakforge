@@ -39,6 +39,7 @@ export default function ScrollToTop() {
         initial={{ opacity: 0 }}
         animate={{ opacity: isVisible ? 1 : 0 }}
         transition={{ duration: 0.3 }}
+        aria-label="Scroll to top"
       >
         <FiArrowUp size={28} />
       </motion.button>

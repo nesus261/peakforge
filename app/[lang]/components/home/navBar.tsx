@@ -22,7 +22,7 @@ export default function NavBar(params: Props) {
         {navigation.map((item: any) => (
           <Link
             key={item.href}
-            href={`/${dict.lang}/${item.href}`}
+            href={`/${dict.lang}${item.href}`}
             className="text-sm duration-500 text-zinc-500 hover:text-zinc-300"
           >
             {item.name}
